@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="qrc:/www/style.css" />
+    <link rel="stylesheet" href="qrc:/www/simple-slider.css" />
+    <script type="text/javascript" src="qrc:/www/jquery.min.js"></script>
+    <script type="text/javascript" src="qrc:/www/simple-slider.min.js"></script>
+    <script type="text/javascript" src="qrc:/www/leg.js"></script>
+    <script type="text/javascript" src="qrc:/qtwebchannel/qwebchannel.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select class="mode">
+        <option value="auto">Mode Auto</option>
+        <option value="angle">Mode Angle</option>
+        <option value="xyz-iterative">Mode XYZ (iteratif)</option>
+        <option value="xyz">Mode XYZ (analytique)</option>
+    </select>
+
+    <div class="sliders">
+        <div class="mode-angle">
+            Angle 1:
+            <input type="text" name="angle1" class="slider" value="0" /> Angle 2:
+            <input type="text" name="angle2" class="slider" value="0" /> Angle 3:
+            <input type="text" name="angle3" class="slider" value="0" />
+        </div>
+
+        <div class="mode-xyz">
+            X:
+            <input type="text" name="x" class="slider-xyz" value="0" /> Y:
+            <input type="text" name="y" class="slider-xyz" value="0" /> Z:
+            <input type="text" name="z" class="slider-xyz" value="0" />
+        </div>
+    </div>
+
+    <div class="debug">
+        Test
+    </div>
+</body>
+
+</html>
